@@ -1,8 +1,0 @@
----
-alwaysApply: true
----
-
-Important version context regarding core packages:
-- NextJS v15
-- React v19
-- TailWind v4
