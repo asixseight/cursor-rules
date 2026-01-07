@@ -1,5 +1,5 @@
 ---
-globs: *.tsx,*.ts,*.js,*.json
+globs: **/*.tsx, **/*.ts, **/*.js, **/*.json
 alwaysApply: false
 ---
 # Core Principles
@@ -22,8 +22,8 @@ Building for the web means building for everyone. Accessibility is a fundamental
 ## Separation of Concerns (SoC)
 Structure code so that different parts of the application handle different responsibilities. Keep UI components separate from business logic and data fetching to make them easier to understand, test, and maintain independently.
 
+## Negative Space Programming
+Define a function by what it should not do. Use invariants and assertions to prevent invalid states and guarantee correct behavior. Instead of numerous defensive if checks, assert constraints directly into the code. This makes programs more robust and secure by clearly specifying invalid conditions.
+
 # Things to consider
 These items are considered on a case-by-case basis. Would any of these principles improve the current implementation?
-
-## Negative Space Programming
-Define a program by what it should not do. Use invariants and assertions to prevent invalid states and guarantee correct behavior. Instead of numerous defensive if checks, assert constraints directly into the code. This makes programs more robust and secure by clearly specifying invalid conditions.

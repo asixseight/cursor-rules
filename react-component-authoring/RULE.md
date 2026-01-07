@@ -1,5 +1,5 @@
 ---
-globs: *.tsx
+globs: **/*.tsx
 alwaysApply: false
 ---
 
