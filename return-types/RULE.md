@@ -1,5 +1,7 @@
 ---
 globs: **/*.tsx, **/*.ts
+paths: 
+  - "**/*.{ts,tsx}"
 alwaysApply: false
 ---
 # Return Types

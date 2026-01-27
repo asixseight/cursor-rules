@@ -1,9 +1,11 @@
 ---
 globs: **/*.tsx, **/*.ts
+paths: 
+  - "**/*.{ts,tsx}"
 alwaysApply: false
 ---
-
 # Interface vs. Type
+
 ALWAYS prefer `interface extends` when modelling inheritance.
 
 The `&` operator (type intersection) has terrible performance in TypeScript and should only be used where `interface extends` is not possible.
@@ -39,6 +41,7 @@ interface C extends A, B {
 ```
 
 ## Exception: React Component Props
+
 A primary case where `interface extends` is "not possible" is when extending React's built-in `type` aliases for component props (e.g., `ComponentPropsWithRef`).
 
 In this situation, using the `&` operator is the correct and accepted pattern.

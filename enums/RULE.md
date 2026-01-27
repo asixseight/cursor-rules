@@ -1,9 +1,10 @@
 ---
 globs: **/*.tsx, **/*.ts
+paths: 
+  - "**/*.{ts,tsx}"
 alwaysApply: false
 ---
-
-Do not introduce new enums into the codebase. Retain existing enums.
+# Do not introduce new enums into the codebase. Retain existing enums
 
 If you require enum-like behaviour, use an `as const` object:
 

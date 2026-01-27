@@ -1,7 +1,10 @@
 ---
 globs: **/*.tsx, **/*.ts
+paths: 
+  - "**/*.{ts,tsx}"
 alwaysApply: false
 ---
+# noUncheckedIndexedAccess
 
 If the user has this rule enabled in their `tsconfig.json`, indexing into objects and arrays will behave differently from how you expect.
 

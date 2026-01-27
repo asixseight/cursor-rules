@@ -1,7 +1,10 @@
 ---
 globs: **/*.tsx, **/*.ts
+paths: 
+  - "**/*.{ts,tsx}"
 alwaysApply: false
 ---
+# Readonly properties
 
 Use `readonly` properties for object types by default. This will prevent accidental mutation at runtime.
 

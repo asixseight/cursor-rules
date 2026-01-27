@@ -1,16 +1,20 @@
 ---
+globs: src/**/*.tsx, src/**/*.ts
+paths: 
+  - "src/**/*.{ts,tsx}"
 description: Best practices for handling generated GraphQL types and partial data in components
-globs: **/*.tsx, **/*.ts
 ---
 # GraphQL Type Usage in Components
 
 When passing data derived from GraphQL queries to UI components, match the prop types to the component's requirements, not the full generated schema.
 
 ## Problem
+
 Generated GraphQL types define all possible properties, but specific queries often fetch only a subset (fragments). Additionally, query arrays often contain nullable items.
 Strictly typing props as the full `GeneratedType` causes errors when passing partial data, leading to dangerous `as any` casts.
 
 ## Use `Pick` for Component Props
+
 Define props based on exactly what the component uses. This ensures type safety without requiring the full unused schema.
 
 ```tsx
@@ -28,9 +32,11 @@ function ArticleCard({ article }: ArticleCardProps) {
 ```
 
 ## Filter Nulls with Type Guards
+
 When dealing with CMS arrays, do not loosen component props to accept `null`. Instead, use a type predicate to strictly filter the array.
 
 ### ✅ Recommended Pattern
+
 ```ts
 /**
  * Standard predicate for filtering nullable CMS data

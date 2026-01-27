@@ -1,9 +1,10 @@
 ---
 globs: **/*.tsx, **/*.ts
+paths: 
+  - "**/*.{ts,tsx}"
 alwaysApply: false
 ---
-
-Unless explicitly required by the framework, do not use default exports.
+# Unless explicitly required by the framework, do not use default exports
 
 ```ts
 // BAD

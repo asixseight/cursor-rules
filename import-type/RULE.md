@@ -1,9 +1,10 @@
 ---
 globs: **/*.tsx, **/*.ts
+paths: 
+  - "**/*.{ts,tsx}"
 alwaysApply: false
 ---
-
-Use import type whenever you are importing a type.
+# Use import type whenever you are importing a type
 
 Prefer top-level `import type` over inline `import { type ... }`.
 

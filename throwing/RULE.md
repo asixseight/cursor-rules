@@ -1,7 +1,10 @@
 ---
 globs: **/*.tsx, **/*.ts
+paths: 
+  - "**/*.{ts,tsx}"
 alwaysApply: false
 ---
+# Throwing errors
 
 Think carefully before implementing code that throws errors.
 

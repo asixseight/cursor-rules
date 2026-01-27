@@ -1,9 +1,10 @@
 ---
 globs: **/*.tsx, **/*.ts
+paths: 
+  - "**/*.{ts,tsx}"
 alwaysApply: false
 ---
-
-When building generic functions, you may need to use any inside the function body.
+# When building generic functions, you may need to use any inside the function body
 
 This is because TypeScript often cannot match your runtime logic to the logic done inside your types.
 
