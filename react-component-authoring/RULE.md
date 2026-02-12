@@ -1,5 +1,6 @@
 ---
 globs: src/**/*.tsx
+applyTo: "src/**/*.tsx"
 paths: 
   - "src/**/*.tsx"
 alwaysApply: false

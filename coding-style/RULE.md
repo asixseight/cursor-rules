@@ -1,5 +1,6 @@
 ---
 globs: **/*.tsx, **/*.ts, **/*.js, **/*.json
+applyTo: "**/*.tsx, **/*.ts, **/*.js, **/*.json"
 paths: 
   - "**/*.{ts,tsx,js,json}"
 alwaysApply: false

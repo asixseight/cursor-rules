@@ -1,5 +1,6 @@
 ---
 globs: src/**/*.tsx, src/**/*.ts
+applyTo: "src/**/*.tsx, src/**/*.ts"
 paths: 
   - "src/**/*.{ts,tsx}"
 description: Best practices for handling generated GraphQL types and partial data in components
